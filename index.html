@@ -13,6 +13,7 @@
 
     <!-- font awsm linking -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
@@ -66,7 +67,7 @@
             </div>
         </div>
         <div>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-wrapper">
                 <div class="container">
                     <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -155,7 +156,7 @@
     <section class="who-we-are">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12" data-aos="fade-up" data-aos-delay="50" data-aos-duration="3000">
                     <div class="paragraph">
                         <h2>Beautiful. Clean. Responsive.</h2>
                         <p>
@@ -166,7 +167,7 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row" data-aos="fade-down" data-aos-delay="100" data-aos-duration="3000">
                 <div class="col-md-4">
                     <div class="media">
                         <img src="images/icon1.png" class="mr-3" alt="...">
@@ -219,7 +220,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-up-right" data-aos-delay="50" data-aos-duration="3000">
                     <div class="card">
                         <img src="images/card1.png" class="card-img-top" alt="...">
                         <div class="title">
@@ -230,7 +231,7 @@
                     </div>
 
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-up-left" data-aos-delay="50" data-aos-duration="3000">
                     <div class="card">
                         <img src="images/card2.png" class="card-img-top" alt="...">
                         <div class="title">
@@ -292,7 +293,7 @@
     <section class="get-in-touch">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12" data-aos="fade-up" data-aos-delay="50" data-aos-duration="3000">
                     <div class="title">
                         <h2>Want to work with us?</h2>
                         <p>Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor. <br>Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam.</p>
@@ -306,7 +307,7 @@
     </section>
     <!-- Want to work with us? end here -->
     <!-- widget section start -->
-    <section class="widget">
+    <section class="widget" data-aos="fade-down" data-aos-delay="50" data-aos-duration="3000">
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
@@ -394,6 +395,21 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/stickUp.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script type="text/javascript">
+        //initiating jQuery
+        jQuery(function($) {
+            $(document).ready(function() {
+                //enabling stickUp on the '.navbar-wrapper' class
+                $('.navbar-wrapper').stickUp();
+            });
+        });
+    </script>
+
     <script>
         $('.owl-carousel').owlCarousel({
             loop: true,
